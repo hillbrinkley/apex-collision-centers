@@ -1,7 +1,7 @@
 {
-  "name": "feedbox-mobile-app",
-  "author": "teleportHQ",
-  "version": "0.0.0",
+  "name": "apex-collision-centers",
+  "author": "Brinkley Hill",
+  "version": "0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
