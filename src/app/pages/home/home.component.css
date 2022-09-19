@@ -1,6 +1,7 @@
 :host {
   display: contents;
 }
+
 .home-container {
   width: 100%;
   display: flex;
@@ -18,10 +19,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url(/assets/photos/building.jpg);
+  max-height: 87vh;
+  background-size: cover;
 }
 .home-max-width {
   align-items: stretch;
 }
+
 .home-content-container {
   flex: 1;
   display: flex;
@@ -30,6 +35,9 @@
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: center;
+  background-color: var(--dl-color-backgrounds-gray);
+  padding: 60px;
+  border-radius: 2%;
 }
 .home-text {
   width: 90%;

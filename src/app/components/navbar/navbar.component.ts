@@ -7,13 +7,13 @@ import { Component, Input } from "@angular/core";
 })
 export class Navbar {
   @Input()
-  image_src: string = "/playground_assets/conecept-logo-01.png";
+  image_src: string = "assets/images/conecept-logo-01.png";
   @Input()
-  image_src1: string = "/playground_assets/conecept-logo-01.png";
+  image_src1: string = "assets/images/conecept-logo-01.png";
   @Input()
-  image_alt: string = "logo";
+  image_alt: string = "top-logo";
   @Input()
-  image_alt1: string = "image";
+  image_alt1: string = "footer-logo";
   @Input()
   text: string = "Follow us";
   @Input()
