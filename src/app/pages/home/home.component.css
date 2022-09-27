@@ -37,7 +37,7 @@
   display: flex;
   min-width: 50%;
   align-items: flex-start;
-  padding-right: var(--dl-space-space-twounits);
+  /* padding-right: var(--dl-space-space-twounits); */
   flex-direction: column;
   justify-content: center;
   background-color: var(--dl-color-backgrounds-gray);
@@ -492,7 +492,9 @@
   }
   .home-content-container {
     margin-bottom: 42px;
-    padding-right: 0px;
+    background-color: ;
+
+    /* padding-right: 0px; */
   }
   .home-text {
     width: 100%;
