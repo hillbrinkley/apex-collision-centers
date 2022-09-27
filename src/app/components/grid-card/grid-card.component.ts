@@ -1,20 +1,19 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'grid-card',
-  templateUrl: 'grid-card.component.html',
-  styleUrls: ['grid-card.component.css'],
+  selector: "grid-card",
+  templateUrl: "grid-card.component.html",
+  styleUrls: ["grid-card.component.css"],
 })
 export class GridCard {
   @Input()
-  text1: string =
-    'Lorem ipsum dolor sit amet. Velit officia lorem ipsum dolor consequat duis enim velit mollit.​'
+  text1: string = "Lorem ipsum dolor sit amet. Velit officia lorem ipsum dolor consequat duis enim velit mollit.​";
   @Input()
-  image_src: string = 'https://play.teleporthq.io/static/svg/default-img.svg'
+  image_src: string = "https://play.teleporthq.io/static/svg/default-img.svg";
   @Input()
-  text: string = 'Challange yourself'
+  text: string = "Auto Body Repair";
   @Input()
-  image_alt: string = 'image'
+  image_alt: string = "image";
 
   constructor() {}
 }

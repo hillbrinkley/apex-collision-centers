@@ -2,6 +2,11 @@
   display: contents;
 }
 
+.map {
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .home-container {
   width: 100%;
   display: flex;
@@ -592,5 +597,9 @@
   .home-container2 {
     max-width: 100%;
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .map {
+    width: 100%;
+    margin-bottom: 40px;
   }
 }
