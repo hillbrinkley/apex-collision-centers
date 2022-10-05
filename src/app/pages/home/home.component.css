@@ -2,9 +2,20 @@
   display: contents;
 }
 
+.big-logo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  align-items: center;
+}
+
 .map {
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.map-section {
+  background-color: var(--dl-color-grays-white100);
 }
 
 .home-container {
@@ -21,32 +32,46 @@
 .home-main {
   flex: 0 0 auto;
   width: 100%;
+
   display: flex;
   align-items: center;
   flex-direction: column;
   background-image: url(/assets/photos/building.jpg);
-  max-height: 87vh;
+  min-height: 100vh;
   background-size: cover;
 }
 .home-max-width {
-  align-items: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+  height: auto;
+}
+.vertical {
+  display: inline;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
 }
 
 .home-content-container {
-  flex: 1;
+  flex: 0 0 auto;
   display: flex;
   min-width: 50%;
-  align-items: flex-start;
+  align-items: center;
   /* padding-right: var(--dl-space-space-twounits); */
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-backgrounds-gray);
+
+  /* background-color: grey; */
   padding: 60px;
   border-radius: 2%;
+  border: solid 2px black;
 }
 .home-text {
-  width: 90%;
-  margin-bottom: 42px;
+  color: var(--dl-color-backgrounds-gray);
+  margin-bottom: 20px;
 }
 .home-text02 {
   color: var(--dl-color-backgrounds-primary);
@@ -492,9 +517,6 @@
   }
   .home-content-container {
     margin-bottom: 42px;
-    background-color: ;
-
-    /* padding-right: 0px; */
   }
   .home-text {
     width: 100%;

@@ -9,7 +9,7 @@ export class GridCard {
   @Input()
   text1: string = "Lorem ipsum dolor sit amet. Velit officia lorem ipsum dolor consequat duis enim velit mollit.​";
   @Input()
-  image_src: string = "https://play.teleporthq.io/static/svg/default-img.svg";
+  image_src: string = "/assets/photos/car.jpg";
   @Input()
   text: string = "Auto Body Repair";
   @Input()
