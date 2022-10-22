@@ -2,17 +2,19 @@
   display: contents;
 }
 .copyright-copyright {
-  flex: 0 0 auto;
   width: 100%;
-  display: flex;
-  align-items: center;
+
   padding-top: var(
     --dl-space-space-twounits
   );
-  flex-direction: column;
+  border: solid 2px black;
+
   padding-bottom: var(
     --dl-space-space-twounits
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright-text {
