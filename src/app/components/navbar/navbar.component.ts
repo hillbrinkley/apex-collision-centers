@@ -1,4 +1,7 @@
-import { Component, Input } from "@angular/core";
+import {
+  Component,
+  Input,
+} from "@angular/core";
 
 @Component({
   selector: "app-navbar",
@@ -7,9 +10,11 @@ import { Component, Input } from "@angular/core";
 })
 export class Navbar {
   @Input()
-  image_src: string = "assets/images/conecept-logo-01.png";
+  image_src: string =
+    "assets/images/conecept-logo-01.png";
   @Input()
-  image_src1: string = "assets/images/conecept-logo-01.png";
+  image_src1: string =
+    "assets/images/conecept-logo-01.png";
   @Input()
   image_alt: string = "top-logo";
   @Input()
@@ -17,7 +22,8 @@ export class Navbar {
   @Input()
   text: string = "Follow us";
   @Input()
-  PrimaryBtn: string = "Call us: (434) 434-4738";
+  PrimaryBtn: string =
+    "Call us: (434) 229-4864";
   @Input()
   PrimaryBtn1: string = "Get started";
 
