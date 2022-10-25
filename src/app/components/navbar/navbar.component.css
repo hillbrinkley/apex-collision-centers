@@ -130,4 +130,7 @@
   .navbar-primary-btn1 {
     display: none;
   }
+  .navbar-navbar-container {
+    display: none;
+  }
 }

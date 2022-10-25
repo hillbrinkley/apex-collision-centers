@@ -708,4 +708,9 @@
   .home-main {
     background-position: center top;
   }
+
+  .home-text {
+    margin-top: 120px;
+    text-align: center;
+  }
 }
