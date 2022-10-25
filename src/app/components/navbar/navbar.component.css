@@ -1,5 +1,5 @@
-:host { 
-  display: contents; 
+:host {
+  display: contents;
 }
 .navbar-navbar-container {
   top: 0;
@@ -10,7 +10,7 @@
   justify-content: flex-start;
 }
 .navbar-image {
-  width: 106px;
+  width: 180px;
 }
 .navbar-nav {
   display: flex;
@@ -28,7 +28,9 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
+  margin-bottom: var(
+    --dl-space-space-threeunits
+  );
   justify-content: space-between;
 }
 .navbar-image1 {
@@ -44,7 +46,9 @@
   height: var(--dl-size-size-xsmall);
 }
 .navbar-primary-btn {
-  margin-top: var(--dl-space-space-oneandhalfunits);
+  margin-top: var(
+    --dl-space-space-oneandhalfunits
+  );
 }
 .navbar-social-media {
   flex: 0 0 auto;
@@ -56,7 +60,9 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  margin-bottom: var(
+    --dl-space-space-oneandhalfunits
+  );
 }
 .navbar-container1 {
   flex: 0 0 auto;
@@ -68,30 +74,42 @@
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .navbar-icon04:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .navbar-icon08 {
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .navbar-icon08:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .navbar-icon12 {
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .navbar-icon12:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .navbar-icon14 {
@@ -100,14 +118,19 @@
   transition: 0.3s;
 }
 .navbar-icon14:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .navbar-nav {
     display: none;
   }
   .navbar-primary-btn1 {
+    display: none;
+  }
+  .navbar-navbar-container {
     display: none;
   }
 }
