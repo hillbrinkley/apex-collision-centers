@@ -23,7 +23,7 @@ export class Navbar {
   text: string = "Follow us";
   @Input()
   PrimaryBtn: string =
-    "Call us: (434) 229-4864";
+    "Call us:  (434) 473-0160";
   @Input()
   PrimaryBtn1: string = "Get started";
 
