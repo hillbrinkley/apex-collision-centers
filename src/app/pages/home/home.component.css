@@ -2,6 +2,11 @@
   display: contents;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .under-about {
   align-items: center;
   text-align: center;
@@ -37,14 +42,14 @@
   );
 }
 .home-main {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(/assets/photos/building.jpg);
-  min-height: 100vh;
+  min-height: 80vh;
   background-size: cover;
-
+  border-radius: 1.2%;
   background-position: center;
 }
 
@@ -709,6 +714,8 @@
   }
   .home-main {
     background-position: center top;
+    width: 100%;
+    border-radius: 0%;
   }
 
   .home-text {
