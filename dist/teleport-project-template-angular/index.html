@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta property="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#f7f4f2ff">
     <style data-tag="reset-style-sheet">
       html {
         line-height: 1.15;
@@ -79,7 +80,8 @@
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: franklin-gothic-atf, sans-serif;
+        font-family: franklin-gothic-atf,
+          sans-serif;
         font-size: 16px;
       }
 
@@ -90,8 +92,12 @@
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.1;
-        color: var(--dl-color-grays-dark100);
-        background-color: var(--dl-color-grays-white100);
+        color: var(
+          --dl-color-grays-dark100
+        );
+        background-color: var(
+          --dl-color-grays-white100
+        );
       }
     </style>
     <style type="text/css">@import url("https://p.typekit.net/p.css?s=1&k=bga7pkl&ht=tk&f=44931.44932.44939.44940&a=45054488&app=typekit&e=css");@font-face {font-family:"franklin-gothic-atf";src:url("https://use.typekit.net/af/c1ecf4/00000000000000007735c727/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c1ecf4/00000000000000007735c727/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c1ecf4/00000000000000007735c727/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}@font-face {font-family:"franklin-gothic-atf";src:url("https://use.typekit.net/af/f806c0/00000000000000007735c72a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/f806c0/00000000000000007735c72a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/f806c0/00000000000000007735c72a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;}@font-face {font-family:"franklin-gothic-atf";src:url("https://use.typekit.net/af/f16283/00000000000000007735c732/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/f16283/00000000000000007735c732/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/f16283/00000000000000007735c732/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;}@font-face {font-family:"franklin-gothic-atf";src:url("https://use.typekit.net/af/6d3002/00000000000000007735c733/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/6d3002/00000000000000007735c733/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/6d3002/00000000000000007735c733/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;}.tk-franklin-gothic-atf{font-family:"franklin-gothic-atf",sans-serif;}</style>
@@ -110,21 +116,28 @@
       window.onload = () => {
         const runAllScripts = () => {};
 
-        const listenForUrlChanges = () => {
-          let url = location.href;
-          document.body.addEventListener(
-            "click",
-            () => {
-              requestAnimationFrame(() => {
-                if (url !== location.href) {
-                  runAllScripts();
-                  url = location.href;
-                }
-              });
-            },
-            true
-          );
-        };
+        const listenForUrlChanges =
+          () => {
+            let url = location.href;
+            document.body.addEventListener(
+              "click",
+              () => {
+                requestAnimationFrame(
+                  () => {
+                    if (
+                      url !==
+                      location.href
+                    ) {
+                      runAllScripts();
+                      url =
+                        location.href;
+                    }
+                  }
+                );
+              },
+              true
+            );
+          };
 
         runAllScripts();
       };
