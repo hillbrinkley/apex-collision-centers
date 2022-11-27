@@ -203,12 +203,13 @@
   #menu {
     position: absolute;
     width: 114%;
-    height: 30%;
+    height: 100%;
     box-shadow: 0 0 10px #85888c;
     top: 0px;
     padding: 50px;
     padding-top: 125px;
     font-size: 1.4em;
+
     background-color: var(
       --dl-color-backgrounds-gray
     );
