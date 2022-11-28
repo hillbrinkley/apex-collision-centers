@@ -11,6 +11,9 @@
 .footer-max-width {
   justify-content: space-between;
 }
+.clickable {
+  cursor: pointer;
+}
 .footer-container {
   flex: 0 0 auto;
   width: 50%;
@@ -21,7 +24,9 @@
 .footer-image {
   width: 250px;
   margin-left: -20px;
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: var(
+    --dl-space-space-twounits
+  );
 }
 .footer-text {
   color: var(--dl-color-grays-gray100);
@@ -50,30 +55,42 @@
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .footer-icon:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .footer-icon04 {
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .footer-icon04:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .footer-icon08 {
   width: 24px;
   height: 24px;
   transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(
+    --dl-space-space-twounits
+  );
 }
 .footer-icon08:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .footer-icon10 {
@@ -82,7 +99,9 @@
   transition: 0.3s;
 }
 .footer-icon10:hover {
-  fill: var(--dl-color-backgrounds-primary);
+  fill: var(
+    --dl-color-backgrounds-primary
+  );
   cursor: pointer;
 }
 .footer-links {
@@ -103,7 +122,9 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: var(--dl-space-space-threeunits);
+  margin-bottom: var(
+    --dl-space-space-threeunits
+  );
 }
 .footer-text07 {
   margin-bottom: 0px;
@@ -119,7 +140,9 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: var(--dl-space-space-threeunits);
+  margin-bottom: var(
+    --dl-space-space-threeunits
+  );
 }
 .footer-text13 {
   margin-bottom: 0px;
@@ -133,7 +156,9 @@
   }
   .footer-links {
     width: 100%;
-    margin-bottom: var(--dl-space-space-threeunits);
+    margin-bottom: var(
+      --dl-space-space-threeunits
+    );
   }
 }
 @media (max-width: 479px) {
@@ -142,21 +167,29 @@
   }
   .footer-container2 {
     width: 100%;
-    margin-bottom: var(--dl-space-space-threeunits);
+    margin-bottom: var(
+      --dl-space-space-threeunits
+    );
   }
   .footer-text02 {
-    margin-bottom: var(--dl-space-space-twounits);
+    margin-bottom: var(
+      --dl-space-space-twounits
+    );
   }
   .footer-container3 {
     width: 100%;
   }
   .footer-text08 {
-    margin-bottom: var(--dl-space-space-twounits);
+    margin-bottom: var(
+      --dl-space-space-twounits
+    );
   }
   .footer-image {
     width: 160px;
     margin-left: 0px;
-    margin-bottom: var(--dl-space-space-twounits);
+    margin-bottom: var(
+      --dl-space-space-twounits
+    );
   }
   .footer-links {
     display: none;
