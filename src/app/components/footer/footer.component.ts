@@ -28,4 +28,43 @@ export class Footer {
         inline: "nearest",
       });
   }
+  services() {
+    document
+      .getElementById("services")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+  }
+
+  location() {
+    document
+      .getElementById("location")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+  }
+
+  about() {
+    document
+      .getElementById("about")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+  }
+
+  faq() {
+    document
+      .getElementById("faq")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+  }
 }
