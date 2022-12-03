@@ -8,11 +8,22 @@ import { GridCard } from "./grid-card/grid-card.component";
 
 import { Navbar } from "./navbar/navbar.component";
 import { Footer } from "./footer/footer.component";
-import { FeatureCard } from "./feature-card/feature-card.component";
 
 @NgModule({
-  declarations: [NavigationLinks, Copyright, GridCard, Navbar, Footer, FeatureCard],
+  declarations: [
+    NavigationLinks,
+    Copyright,
+    GridCard,
+    Navbar,
+    Footer,
+  ],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationLinks, Copyright, GridCard, Navbar, Footer, FeatureCard],
+  exports: [
+    NavigationLinks,
+    Copyright,
+    GridCard,
+    Navbar,
+    Footer,
+  ],
 })
 export class ComponentsModule {}
