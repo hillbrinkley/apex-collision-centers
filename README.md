@@ -1,23 +1,31 @@
-# Apex Collision Centers
+# Apex Collision Center
 
-Angular app built for a new collision center opening November 2022 in Lynchburg, Va.
+🚀 **Live on Production - [apexcollisioncenters.com](https://apexcollisioncenters.com)**
 
-## Live Site
+This repository contains an Angular application developed specifically for a local auto collision repair business. The application serves as an information website to display relevant details about the business to potential customers.
 
-https://apexcollisioncenters.com/
+## Features
 
-## Development server
+- User-friendly interface providing essential information about apex collision center.
+- Clear and concise presentation of services offered and contact details.
+- Interactive map and directions to locate the business easily.
+- Responsive design for seamless viewing across various devices.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+To run this Angular application locally, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository: `git clone https://github.com/your-username/auto-collision-repair-app.git`
+2. Navigate to the project directory: `cd auto-collision-repair-app`
+3. Install dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open your browser and visit: `http://localhost:4200`
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular: A powerful framework for building dynamic web applications.
+- HTML: Markup language used for structuring the application's content.
+- CSS: Styling language to enhance the visual presentation of the website.
+- JavaScript: Programming language providing interactivity and functionality.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
