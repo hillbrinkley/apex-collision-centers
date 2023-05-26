@@ -26,6 +26,6 @@ To run this Angular application locally, follow these steps:
 - Angular: A powerful framework for building dynamic web applications.
 - HTML: Markup language used for structuring the application's content.
 - CSS: Styling language to enhance the visual presentation of the website.
-- JavaScript: Programming language providing interactivity and functionality.
+- Typescript: Programming language providing interactivity and functionality.
 
 
