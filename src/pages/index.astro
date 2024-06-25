@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import building from "../../public/photos/building.jpg";
+---
+
+<Layout title="Apex Collision Center">
+ <main class="min-h-svh min-w-full justify-evenly flex flex-col text-center">
+  <div class="flex justify-evenly items-center min-h-[80vh] px-20">
+   <div class="flex flex-col justify-start gap-4">
+    <div class="flex flex-col gap-4 text-left pr-32">
+     <h1 class="font-extrabold text-7xl">The <span class="text-red-700">Height</span> of<br /> Collision Repair.</h1>
+     <p class="text-zinc-700">
+      Apex Collision is family owned and operated with over 45 years of combined experience. We pride ourselves on treating each of our customers'
+      vehicles as if it is one of our own. We combine our expertise with state of the art tools and repair methods to get your vehicle back to
+      pre-accident condition.
+     </p>
+    </div>
+    <div class="flex justify-start">
+     <a
+      class="py-2 px-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"
+      href="#"
+     >
+      Call us: (434) 473-0160
+     </a>
+    </div>
+   </div>
+   <img src="../../public/photos/building.jpg" alt="Apex Collision Center Building" width={1000} class="rounded-xl shadow-md shadow-zinc-950/30" />
+  </div>
+
+  <div class="grid grid-flow-col place-content-center gap-24 pb-20 bg-zinc-900 pt-20">
+   <div class="relative flex flex-col mt-6 text-zinc-950 justify-between bg-zinc-50 shadow-md bg-clip-border rounded-xl w-96">
+    <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-zinc-500 shadow-blue-zinc-500/40">
+     <img
+      src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+      alt="card-image"
+     />
+    </div>
+    <div class="p-6">
+     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-zinc-950">Auto Body Repair</h5>
+     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+      Whether it's a small fender bender, damage from an animal, or a major collision, we will repair it using the best replacement parts and paint
+      with a lifetime warranty.
+     </p>
+    </div>
+    <div class="p-6 pt-0">
+     <button
+      class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-700 text-white shadow-md shadow-zinc-950/10 hover:shadow-lg hover:shadow-zinc-950/20 hover:bg-red-800 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+      type="button"
+     >
+      Read More
+     </button>
+    </div>
+   </div>
+   <div class="relative flex flex-col mt-6 justify-between text-zinc-950 bg-zinc-50 shadow-md bg-clip-border rounded-xl w-96">
+    <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-zinc-500 shadow-blue-zinc-500/40">
+     <img
+      src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+      alt="card-image"
+     />
+    </div>
+    <div class="p-6">
+     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-zinc-950">Paintless Dent Repair</h5>
+     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+      Sometimes your vehicle may suffer smaller dents; such as dings from shopping carts, storm debris, hail, etc. Oftentimes, this type of damage can
+      be repaired same-day without the use of new parts and paint, saving you time and money.
+     </p>
+    </div>
+    <div class="p-6 pt-0">
+     <button
+      class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-700 text-white shadow-md shadow-zinc-950/10 hover:shadow-lg hover:shadow-zinc-950/20 hover:bg-red-800 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+      type="button"
+     >
+      Read More
+     </button>
+    </div>
+   </div>
+
+   <div class="relative flex flex-col justify-between mt-6 text-zinc-950 bg-zinc-50 shadow-md bg-clip-border rounded-xl w-96">
+    <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-zinc-500 shadow-blue-zinc-500/40">
+     <img
+      src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+      alt="card-image"
+     />
+    </div>
+    <div class="p-6">
+     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-zinc-950">Paint Color Matching</h5>
+     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+      Today's vehicles commonly come with exotic paint finishes. From specialty metallic colors, tri-coat pearl colors, and everything in between. We
+      use the best in OEM grade material and technology to match and spray your vehicle's paint with a lifetime warranty.
+     </p>
+    </div>
+    <div class="p-6 pt-0">
+     <button
+      class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-700 text-white shadow-md shadow-zinc-950/10 hover:shadow-lg hover:shadow-zinc-950/20 hover:bg-red-800 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+      type="button"
+     >
+      Read More
+     </button>
+    </div>
+   </div>
+  </div>
+ </main>
+</Layout>
