@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Plus Jakarta Sans Variable", ...defaultTheme.fontFamily.sans],
-        serif: ["Inria Serif", ...defaultTheme.fontFamily.serif]
+        serif: ["Space Grotesk", ...defaultTheme.fontFamily.serif]
       },
 
       backgroundImage: {
