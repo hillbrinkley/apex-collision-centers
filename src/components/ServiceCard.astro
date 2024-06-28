@@ -1,0 +1,32 @@
+---
+interface Props {
+ title: string;
+ description: string;
+
+ imageUrl: string;
+}
+
+const { title, description, imageUrl } = Astro.props;
+---
+
+<div class="flex flex-col mt-6 text-zinc-950 justify-between bg-zinc-50 shadow-md bg-clip-border rounded-xl w-80 sm:w-96">
+ <div class="relative sm:h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-zinc-500 shadow-blue-zinc-500/40">
+  <img src={imageUrl} alt="card-image" />
+ </div>
+ <div class="flex-1 flex justify-between flex-col">
+  <div class="p-6">
+   <h5 class="block mb-2 text-xl antialiased leading-snug tracking-normal text-blue-zinc-950 font-sans font-semibold">{title}</h5>
+   <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+    {description}
+   </p>
+  </div>
+  <div class="p-6 pt-0">
+   <button
+    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-700 text-white shadow-md shadow-zinc-950/10 hover:shadow-lg hover:shadow-zinc-950/20 hover:bg-red-800 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+    type="button"
+   >
+    Read More
+   </button>
+  </div>
+ </div>
+</div>
