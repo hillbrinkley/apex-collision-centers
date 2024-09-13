@@ -13,7 +13,7 @@ export default {
       },
 
       backgroundImage: {
-        'custom-image': 'url("/background.svg")',
+        'building': 'url("/photos/darker.jpg")',
       },
 
 

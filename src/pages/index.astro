@@ -4,32 +4,45 @@ import ServiceCard from "../components/ServiceCard.astro";
 ---
 
 <Layout title="Apex Collision Center">
- <main class="min-h-svh min-w-[100svw] justify-evenly flex flex-col text-center">
+ <main class="min-h-svh min-w-[100svw] justify-evenly flex flex-col text-center bg-building bg-center bg-fixed">
   <div class="flex justify-evenly items-center min-h-[80vh] sm:px-40 px-5 gap-20">
    <div class="flex flex-col justify-start gap-4 z-20">
-    <div class="flex flex-col gap-4 text-left sm:pr-32">
-     <h1 class="font-extrabold text-7xl font-serif">The <span class="text-red-700">Height</span> of<br /> Collision Repair.</h1>
-     <p class="text-zinc-700">
-      Apex Collision is family owned and operated with over 45 years of combined experience. We pride ourselves on treating each of our customers'
-      vehicles as if it is one of our own. We combine our expertise with state of the art tools and repair methods to get your vehicle back to
-      pre-accident condition.
+    <div class="flex flex-col gap-4 text-left">
+     <h1 class="font-extrabold text-7xl tracking-wide text-white">The <span class="text-red-600">Height</span> of<br /> Collision Repair.</h1>
+     <p class="text-zinc-300 w-2/3 font-semibold text-lg">
+      Apex Collision is family owned and operated with over 45 years of combined experience. We combine our expertise with state of the art tools and
+      repair methods to get your vehicle back to pre-accident condition.
      </p>
     </div>
-    <div class="flex justify-start">
+    <div class="flex w-fit mt-2 gap-8">
      <a
-      class="py-2 px-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"
+      class="py-2 px-5 flex justify-center items-center gap-x-2 font-semibold rounded-lg shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"
+      href="#"
+     >
+      <svg
+       xmlns="http://www.w3.org/2000/svg"
+       width="24"
+       height="24"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       ><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg
+      >
+      Schedule an Appointment
+     </a>
+
+     <a
+      class="py-2 px-5 flex justify-center items-center gap-x-2 font-semibold rounded-lg shadow-sm bg-white text-zinc-800 disabled:pointer-events-none hover:bg-zinc-200 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"
       href="#"
      >
       Call us: (434) 473-0160
      </a>
     </div>
    </div>
-   <img
-    src="/photos/new-building.jpg"
-    alt="Apex Collision Center Building"
-    width={1000}
-    class="rounded-xl shadow-md shadow-zinc-950/30 hidden xl:flex z-0"
-   />
+   <!-- <div>form</div> -->
   </div>
 
   <div class="grid grid-flow-col sm:place-content-center gap-10 sm:gap-24 pb-20 bg-zinc-900 pt-20 overflow-x-scroll p-5">
