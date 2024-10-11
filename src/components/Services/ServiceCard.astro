@@ -13,9 +13,9 @@ const { title, description, imageUrl, reverse } = Astro.props;
  <img src={imageUrl} alt="card-image" class={`col-span-1 ${reverse ? "order-2" : "order-1"}`} />
 
  <div class={`grid place-content-center text-center px-20 gap-2 bg-zinc-50 ${reverse ? "order-1" : "order-2"}`}>
-  <h5 class="block mb-2 text-xl antialiased leading-snug tracking-normal text-blue-zinc-950 font-sans font-semibold">{title}</h5>
+  <h5 class="block mb-2 text-2xl antialiased leading-snug tracking-normal text-blue-zinc-950 font-sans font-semibold">{title}</h5>
   <hr />
-  <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+  <p class="block text-base antialiased text-zinc-800 leading-relaxed text-inherit">
    {description}
   </p>
 
