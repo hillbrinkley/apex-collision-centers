@@ -2,25 +2,24 @@
 interface Props {
  title: string;
  description: string;
-
  imageUrl: string;
+ reverse?: boolean;
 }
 
-const { title, description, imageUrl } = Astro.props;
+const { title, description, imageUrl, reverse } = Astro.props;
 ---
 
-<div class="flex flex-col mt-6 text-zinc-950 justify-between bg-zinc-50 shadow-md bg-clip-border rounded-xl w-80 sm:w-96">
- <div class="relative sm:h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-zinc-500 shadow-blue-zinc-500/40">
-  <img src={imageUrl} alt="card-image" />
- </div>
- <div class="flex-1 flex justify-between flex-col">
-  <div class="p-6">
-   <h5 class="block mb-2 text-xl antialiased leading-snug tracking-normal text-blue-zinc-950 font-sans font-semibold">{title}</h5>
-   <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-    {description}
-   </p>
-  </div>
-  <div class="p-6 pt-0">
+<div class="grid grid-cols-2 text-zinc-950 justify-between shadow-md bg-clip-border">
+ <img src={imageUrl} alt="card-image" class={`col-span-1 ${reverse ? "order-2" : "order-1"}`} />
+
+ <div class={`grid place-content-center text-center px-20 gap-2 bg-zinc-50 ${reverse ? "order-1" : "order-2"}`}>
+  <h5 class="block mb-2 text-xl antialiased leading-snug tracking-normal text-blue-zinc-950 font-sans font-semibold">{title}</h5>
+  <hr />
+  <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+   {description}
+  </p>
+
+  <div class="py-4">
    <button
     class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-700 text-white shadow-md shadow-zinc-950/10 hover:shadow-lg hover:shadow-zinc-950/20 hover:bg-red-800 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
     type="button"

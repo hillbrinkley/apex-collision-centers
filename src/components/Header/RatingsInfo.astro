@@ -1,0 +1,18 @@
+---
+import Star from "./Star.astro";
+
+// Define the number of stars and reviews
+const totalStars = 5;
+const reviews = 151;
+const rating = "5.0";
+---
+
+<div class="flex-col gap-2">
+ <div class="flex items-center justify-start gap-2">
+  <div class="font-bold text-4xl">{rating}</div>
+  <div class="flex items-center justify-center">
+   {Array.from({ length: totalStars }).map(() => <Star />)}
+  </div>
+ </div>
+ <a class="text-sm hover:underline" href="/reviews">({reviews} Ratings & Reviews)</a>
+</div>

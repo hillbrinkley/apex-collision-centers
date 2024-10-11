@@ -1,0 +1,29 @@
+---
+import MessageIcon from "./MessageIcon.astro";
+import ReviewCard from "./ReviewCard.astro";
+---
+
+<div class="grid grid-cols-2 px-24 py-12">
+ <div class="flex flex-col gap-2">
+  <MessageIcon />
+  <span class="text-2xl font-bold">Here's what our satisfied <br /> customers are saying... </span>
+  <span class="text-sm leading-loose w-3/4 text-zinc-300/80"
+   >At Apex Collision Center, we are committed to delivering outstanding collision repair services. We would greatly appreciate it if you could share
+   your experience with our shop. Please take a moment to <a href="/reviews" class="underline hover:text-red-700 transition duration-200"
+    >leave a review</a
+   > for Apex Collision Center and let others know your thoughts.</span
+  >
+ </div>
+ <div class="grid gap-6">
+  <ReviewCard />
+  <ReviewCard />
+  <div>
+   <a
+    class="py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-lg shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"
+    href="#"
+   >
+    Read More Reviews
+   </a>
+  </div>
+ </div>
+</div>
