@@ -3,11 +3,11 @@ import MessageIcon from "./MessageIcon.astro";
 import ReviewCard from "./ReviewCard.astro";
 ---
 
-<div class="grid grid-cols-2 px-24 py-12">
+<div class="grid sm:grid-cols-2 sm:px-52 py-12 px-5">
  <div class="flex flex-col gap-2">
   <MessageIcon />
   <span class="text-2xl font-bold">Here's what our satisfied <br /> customers are saying... </span>
-  <span class="text-sm leading-loose w-3/4 text-zinc-300/80"
+  <span class="text-sm leading-loose sm:w-3/4 text-zinc-300/80"
    >At Apex Collision Center, we are committed to delivering outstanding collision repair services. We would greatly appreciate it if you could share
    your experience with our shop. Please take a moment to <a href="/reviews" class="underline hover:text-red-700 transition duration-200"
     >leave a review</a
@@ -15,8 +15,24 @@ import ReviewCard from "./ReviewCard.astro";
   >
  </div>
  <div class="grid gap-6">
-  <ReviewCard name="William F." rating={5} reviewText="Fantastic service as usual." date="10/08/2024" />
-  <ReviewCard name="Patricia W." rating={4} reviewText="I love this place!" date="10/02/2024" />
+  <ReviewCard
+   name="Andrew L."
+   rating={5}
+   reviewText="Quick and phenomenal work by the Apex team. They were very cooperative and understanding. I needed my car repaired to drivable condition in a couple days, and they got it back to me a day early in great condition!"
+   date="10/08/2024"
+  />
+  <ReviewCard
+   name="Heidi E."
+   rating={5}
+   reviewText="APEX handled the repair of our car flawlessly. Communicated in detail expectations and dates for ordered parts.  Worked with the insurance company to make sure everyone was on the same page.  The customer service given by Geoff was outstanding. And the best part, our vehicle was done with excellence and in a timely manner. We would recommend APEX to anyone looking to have their car repaired. It is a stressful experience already, APEX took the stress from us and made it easy!"
+   date="09/20/2024"
+  />
+  <ReviewCard
+   name="Addison B."
+   rating={5}
+   reviewText="Everyone at Apex was extremely helpful and kind. Their team kept me updated throughout the process of getting my truck repaired. When I got my truck back it looked better than new! I 100% recommended the Apex team."
+   date="10/08/2024"
+  />
   <div>
    <a
     class="py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-lg shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20"

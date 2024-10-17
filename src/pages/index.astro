@@ -6,12 +6,13 @@ import ServicesSection from "../components/Services/ServicesSection.astro";
 import LandingActions from "../components/Landing/LandingActions.astro";
 import LandingHookText from "../components/Landing/LandingHookText.astro";
 import Reviews from "../components/Review/Reviews.astro";
+import Team from "../components/Team.astro";
 ---
 
 <Layout title="Apex Collision Center">
  <main class="max-w-[100svw] overflow-x-hidden justify-evenly flex flex-col text-center bg-building bg-center bg-fixed">
-  <div class="grid grid-flow-col justify-evenly items-center min-h-[80vh] grid-cols-3 sm:px-40 px-20">
-   <div class="flex flex-col justify-start gap-10 z-20 col-span-2">
+  <div class="grid sm:grid-flow-col justify-evenly items-center min-h-[80vh] sm:grid-cols-3 sm:px-40 px-0">
+   <div class="flex flex-col sm:justify-start justify-center gap-10 z-20 sm:col-span-2 p-5 py-10 sm:p-0">
     <LandingHookText />
     <LandingActions />
    </div>
@@ -21,4 +22,5 @@ import Reviews from "../components/Review/Reviews.astro";
  </main>
  <ServicesSection />
  <Reviews />
+ <Team />
 </Layout>

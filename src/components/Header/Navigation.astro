@@ -2,26 +2,68 @@
 
 ---
 
-<div class="flex gap-16 justify-center font-bold items-center py-3 text-zinc-50 bg-zinc-900">
- <a href="/" class="group transition duration-300 sm:block hidden">
+<div class="sm:flex hidden sm:gap-16 gap-2 justify-center font-bold items-center py-3 text-zinc-50 bg-zinc-900">
+ <a href="/" class="group transition duration-300">
   Home
   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
  </a>
- <a href="#" class="group transition duration-300 sm:block hidden">
+ <a href="#" class="group transition duration-300">
   Services
   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
  </a>
- <a href="#" class="group transition duration-300 sm:block hidden">
+ <a href="#" class="group transition duration-300">
   About
   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
  </a>
- <a href="#" class="group transition duration-300 sm:block hidden">
+ <a href="#" class="group transition duration-300">
   Reviews
   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
  </a>
 
- <a href="#" class="group transition duration-300 sm:block hidden">
+ <a href="#" class="group transition duration-300">
   Contact
   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
  </a>
+</div>
+<div class="flex flex-col sm:hidden text-zinc-50 bg-zinc-900">
+ <label for="title1" class="w-full flex items-center p-2 mb-1 cursor-pointer transition ease-in-out duration-500 justify-end">
+  <svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   ><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg
+  >
+ </label>
+ <div class="col-span-2">
+  <input type="checkbox" id="title1" class="peer hidden" />
+  <div class="gap-3 content font-semibold px-3 pb-2 peer-checked:grid hidden transition duration-300 ease-in-out text-lg text-start">
+   <a href="/" class="group transition duration-300">
+    Home
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
+   </a>
+   <a href="#" class="group transition duration-300">
+    Services
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
+   </a>
+   <a href="#" class="group transition duration-300">
+    About
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
+   </a>
+   <a href="#" class="group transition duration-300">
+    Reviews
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
+   </a>
+
+   <a href="#" class="group transition duration-300">
+    Contact
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-700"></span>
+   </a>
+  </div>
+ </div>
 </div>
