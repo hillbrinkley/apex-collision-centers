@@ -5,8 +5,37 @@ import LandingForm from "../components/Landing/LandingForm.astro";
 
 <Layout title="Contact">
  <main class="sm:px-24 p-5 outline min-w-full bg-zinc-800/40 min-h-[80svh] gap-10 flex flex-col">
-  <h1 class="text-4xl font-semibold">Contact</h1>
+  <h1 class="sm:text-6xl text-4xl font-semibold">Contact Us</h1>
   <hr />
-  <div>something</div>
+  <div class="grid gap-2">
+   <span class="sm:text-3xl text-2xl">Let's Get in Touch!</span>
+   <span class="sm:text-lg text-sm">Our top priority is customer satisfaction, so feel free to reach out with any questions or feedback. </span>
+  </div>
+  <div class="grid sm:grid-flow-col sm:grid-cols-2 gap-10">
+   <form class="grid gap-10 text-zinc-900">
+    <input type="text" required placeholder="Full Name*" class="p-4 rounded-lg placeholder:text-zinc-600" />
+    <input type="text" required placeholder="Phone*" class="p-4 rounded-lg placeholder:text-zinc-600" />
+    <input type="text" placeholder="Email" class="p-4 rounded-lg placeholder:text-zinc-600" />
+    <textarea rows="4" cols="50" placeholder="Message*" class="placeholder:text-zinc-600 rounded-lg p-4" required></textarea>
+    <button
+     type="submit"
+     class="bg-red-700 hover:bg-red-800 text-zinc-50 py-2 px-4 border border-red-800 shadow hover:scale-105 rounded-lg uppercase
+     font-bold text-sm w-fit"
+     >Submit</button
+    >
+   </form>
+   <div class="flex sm:items-center flex-col gap-10 text-lg">
+    <div class="flex flex-col gap-3">
+     <span class="font-semibold">Contact Info</span>
+     <a class="hover:underline cursor-pointer" href="mailto:info@apexcollisioncenters.com">info@apexcollisioncenters.com</a>
+     <a class="hover:underline cursor-pointer" href="tel:(434) 473-0160">(434) 473-0160</a>
+    </div>
+    <div class="flex flex-col gap-2">
+     <span class="font-bold">Opening Hours</span>
+     <span>Monday – Friday: 8 AM – 5 PM</span>
+     <span>Saturday & Sunday: Closed</span>
+    </div>
+   </div>
+  </div>
  </main>
 </Layout>
