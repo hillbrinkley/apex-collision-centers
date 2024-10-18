@@ -1,4 +1,4 @@
----
+<!-- ---
 import Layout from "../layouts/Layout.astro";
 import ServiceWritingsCard from "../components/Services/ServiceWritingsCard.astro";
 
@@ -6,11 +6,11 @@ const posts = Object.values(await import.meta.glob("../posts/*.md", { eager: tru
 ---
 
 <Layout title="Services">
- <main class="sm:px-24 p-5 outline min-w-full bg-zinc-800/40 min-h-[80svh] flex flex-col gap-5">
+ <main class="sm:px-24 p-5 outline min-w-full bg-zinc-800/40 min-h-[80svh] flex flex-col gap-10">
   <h1 class="text-4xl font-semibold">Services</h1>
   <hr />
   <div class="grid gap-6 w-2/3">
    {posts.map((post) => <ServiceWritingsCard author={post.frontmatter.author} title={post.frontmatter.title} url={post.url} />)}
   </div>
  </main>
-</Layout>
+</Layout> -->
