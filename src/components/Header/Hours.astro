@@ -1,0 +1,44 @@
+---
+const getOpeningHoursMessage = () => {
+ const today = new Date();
+ const day = today.getDay(); // 0 is Sunday, 1 is Monday, ..., 6 is Saturday
+ const hour = today.getHours();
+
+ let message = "";
+
+ if (day >= 1 && day <= 5) {
+  // Monday to Friday
+  if (hour >= 8 && hour < 17) {
+   // Get the day name
+   const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+   const dayName = dayNames[day];
+   message = `${dayName}: 8:00am - 5:00pm`;
+  } else {
+   message = "Closed for the day";
+  }
+ } else {
+  message = "Closed today";
+ }
+
+ return message;
+};
+
+const openingHoursMessage = getOpeningHoursMessage();
+---
+
+<div class="bg-red-700 grid place-content-center py-1 font-semibold text-sm grid-flow-col gap-1">
+ <div class="scale-75 grid place-content-center">
+  <svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg
+  >
+ </div>
+ <span class="grid place-content-center">{openingHoursMessage}</span>
+</div>
