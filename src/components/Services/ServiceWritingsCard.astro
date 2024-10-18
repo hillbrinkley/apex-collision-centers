@@ -1,0 +1,17 @@
+---
+interface Props {
+ title: string;
+ author: string;
+ url: string;
+}
+
+const { title, author, url } = Astro.props;
+---
+
+<a class="text-zinc-950 grid grid-flow-col grid-cols-8" href={url}>
+ <img src="/public/photos/auto.jpg" alt="card-image" class="col-span-2 rounded-l" />
+ <div class="p-5 bg-zinc-50 col-span-6 rounded-r">
+  {title}
+  {author}
+ </div>
+</a>
