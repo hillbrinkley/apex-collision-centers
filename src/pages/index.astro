@@ -1,30 +1,36 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
 
-import LandingForm from "../components/Landing/LandingForm.astro";
-import ServicesSection from "../components/Services/ServicesSection.astro";
-import LandingActions from "../components/Landing/LandingActions.astro";
-import LandingHookText from "../components/Landing/LandingHookText.astro";
-import Reviews from "../components/Review/Reviews.astro";
-import Team from "../components/Team.astro";
-import Location from "../components/Location.astro";
-import SocialsBar from "../components/SocialsBar.astro";
+import LandingForm from '../components/Landing/LandingForm.astro';
+import ServicesSection from '../components/Services/ServicesSection.astro';
+import LandingActions from '../components/Landing/LandingActions.astro';
+import LandingHookText from '../components/Landing/LandingHookText.astro';
+import Reviews from '../components/Review/Reviews.astro';
+import Team from '../components/Team.astro';
+import Location from '../components/Location.astro';
+import SocialsBar from '../components/SocialsBar.astro';
 ---
 
-<Layout title="Apex Collision Center">
- <main class="max-w-[100svw] overflow-x-hidden justify-evenly flex flex-col text-center bg-building bg-center bg-no-repeat sm:bg-fixed">
-  <div class="grid sm:grid-flow-col justify-evenly items-center min-h-[80vh] sm:grid-cols-3 sm:px-24 px-0">
-   <div class="flex flex-col sm:justify-start justify-center gap-10 z-20 sm:col-span-2 p-5 py-10 sm:p-0">
-    <LandingHookText />
-    <LandingActions />
-   </div>
+<Layout title='Apex Collision Center'>
+	<main
+		class='max-w-[100svw] overflow-x-hidden justify-evenly flex flex-col text-center bg-building bg-contain bg-top bg-no-repeat sm:bg-fixed'
+	>
+		<div
+			class='grid sm:grid-flow-col justify-evenly items-center min-h-[80vh] sm:grid-cols-3 sm:px-24 px-0'
+		>
+			<div
+				class='flex flex-col sm:justify-start justify-center gap-10 z-20 sm:col-span-2 p-5 py-10 sm:p-0'
+			>
+				<LandingHookText />
+				<LandingActions />
+			</div>
 
-   <LandingForm />
-  </div>
- </main>
- <ServicesSection />
- <Reviews />
- <!-- <Team /> -->
- <Location />
- <SocialsBar />
+			<LandingForm />
+		</div>
+	</main>
+	<ServicesSection />
+	<Reviews />
+	<!-- <Team /> -->
+	<Location />
+	<SocialsBar />
 </Layout>

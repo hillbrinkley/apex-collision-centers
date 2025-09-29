@@ -13,7 +13,7 @@ export default {
       },
 
       backgroundImage: {
-        'building': 'url("/photos/darker.jpg")',
+        'building': 'url("/photos/building.jpg")',
       },
 
 
