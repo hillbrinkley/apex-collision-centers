@@ -1,10 +1,15 @@
-<div class="flex flex-col text-end gap-2">
- <a class="sm:font-semibold font-extrabold underline sm:text-2xl text-xs" href="tel:4344730160">(434) 473-0160</a>
-
- <a
-  class="py-2 sm:px-2 inline-flex items-center justify-center font-semibold rounded-sm shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20 text-xs sm:text-sm hover:scale-105 uppercase"
-  href="#"
- >
-  Request Estimate
- </a>
+<div class='flex flex-col text-end gap-2'>
+	<a class='sm:font-semibold font-extrabold underline sm:text-2xl text-xs' href='tel:4344730160'
+		>(434) 473-0160</a
+	>
+	{
+		process.env.HIDE && (
+			<a
+				class='py-2 sm:px-2 inline-flex items-center justify-center font-semibold rounded-sm shadow-sm bg-red-700 text-white disabled:pointer-events-none hover:bg-red-800 hover:cursor-pointer hover:transition duration-500 shadow-zinc-950/10 hover:shadow-md hover:shadow-zinc-950/20 text-xs sm:text-sm hover:scale-105 uppercase'
+				href='#'
+			>
+				Request Estimate
+			</a>
+		)
+	}
 </div>
